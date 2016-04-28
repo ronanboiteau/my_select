@@ -5,6 +5,6 @@ I did this project during my first year as a student at EPITECH.
 
 ### How to use my_select?
 • ./my_select [choice_1] [choice_2] [choice_3] [...]<br/>
-• Select/unselect an item with SPACE
-• Delete an item with BACKSPACE
+• Select/unselect an item with SPACE<br/>
+• Delete an item with BACKSPACE<br/>
 • Confirm selection with ENTER
