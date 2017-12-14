@@ -1,10 +1,28 @@
 # my_select
-C program that outputs your selection between multiple given choices.<br/>
-Written in C using Ncurses library.<br/>
-I did this project during my first year as a student at EPITECH.
 
-### How to use my_select?
-• ./my_select [choice_1] [choice_2] [choice_3] [...]<br/>
-• Select/unselect an item with SPACE<br/>
-• Delete an item with BACKSPACE<br/>
-• Confirm selection with ENTER
+{EPITECH.} first year project.
+
+Program that outputs your selection between multiple given choices.
+
+Written in C, using the [ncurses](https://www.gnu.org/software/ncurses/) library.
+
+## Requirements
+
+ - [Make](https://www.gnu.org/software/make/)
+ - [GCC](https://gcc.gnu.org/)
+ - [ncurses](https://www.gnu.org/software/ncurses/) library
+
+## Compilation
+
+Navigate to the root of the repository from your Terminal and run `make` to build the `my_select` executable file.
+
+## How to use my_select?
+
+ - `./my_select [choice_1] [choice_2] [...] [choice_n]`
+ - Select/unselect an item with `SPACE`
+ - Delete an item with `BACKSPACE`
+ - Confirm selection with `ENTER`
+
+## Author
+
+* **Ronan Boiteau** ([GitHub](https://github.com/ronanboiteau) / [LinkedIn](https://www.linkedin.com/in/ronanboiteau/))
