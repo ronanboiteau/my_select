@@ -15,6 +15,7 @@ int			_char_isflag(char letter, t_flag *flags)
 {
   int			idx;
 
+  idx = 0;
   while (idx < FLAGS_NBR)
     {
       if (letter == flags[idx].flag_char)
