@@ -1,18 +1,9 @@
-/*
-** print.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Dec  5 14:30:14 2015 Ronan Boiteau
-** Last update Sun Dec 13 22:43:15 2015 Ronan Boiteau
-*/
-
+#include <stdlib.h>
+#include "list.h"
 #include "my.h"
 #include "my_macro.h"
 #include "my_select_ncurses.h"
 #include "my_select_actions.h"
-#include "list.h"
 
 static void	_handle_columns(int idx, int *column, int longest_arg)
 {

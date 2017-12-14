@@ -1,19 +1,9 @@
-/*
-** my_put_nbr.c for my_put_nbr.c in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Oct  6 09:33:53 2015 Ronan Boiteau
-** Last update Tue Dec  1 03:24:22 2015 Ronan Boiteau
-*/
-
 #include "my.h"
-#include "my_macro.h"
+#include "printf_puts.h"
 
-unsigned int	my_put_nbr_fd(int fd, int nbr)
+t_uint		my_put_nbr_fd(int fd, int nbr)
 {
-  unsigned int	printed;
+  t_uint	printed;
 
   printed = 0;
   if (nbr == -2147483648)
@@ -38,9 +28,9 @@ unsigned int	my_put_nbr_fd(int fd, int nbr)
   return (printed);
 }
 
-unsigned int	my_putnbr_printf(int fd, int nbr)
+t_uint		my_putnbr_printf(int fd, int nbr)
 {
-  unsigned int	printed;
+  t_uint	printed;
 
   printed = 0;
   if (nbr == -2147483648)

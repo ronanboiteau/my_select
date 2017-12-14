@@ -1,13 +1,3 @@
-/*
-** my_select_actions.h for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Dec  8 11:16:09 2015 Ronan Boiteau
-** Last update Fri Dec 11 03:54:01 2015 Ronan Boiteau
-*/
-
 #ifndef MY_SELECT_ACTION_H_
 # define MY_SELECT_ACTION_H_
 

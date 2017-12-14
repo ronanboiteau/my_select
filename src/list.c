@@ -1,13 +1,5 @@
-/*
-** list.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Dec  8 10:27:07 2015 Ronan Boiteau
-** Last update Fri Dec 11 03:48:12 2015 Ronan Boiteau
-*/
-
+#include <stdbool.h>
+#include <stdlib.h>
 #include "my.h"
 #include "my_macro.h"
 #include "list.h"
@@ -64,7 +56,7 @@ int		_put_in_list(t_node *list_ptr, char *str, int arg_rank)
   list_ptr = list_ptr->next;
   list_ptr->str = str;
   list_ptr->arg_rank = arg_rank;
-  list_ptr->selected = FALSE;
+  list_ptr->selected = false;
   list_ptr->next = list_start;
   return (EXIT_SUCCESS);
 }

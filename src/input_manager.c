@@ -1,13 +1,4 @@
-/*
-** input_manager.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Fri Dec 11 03:38:19 2015 Ronan Boiteau
-** Last update Sun Dec 13 21:22:54 2015 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "my.h"
 #include "my_select_actions.h"
 #include "my_select_ncurses.h"

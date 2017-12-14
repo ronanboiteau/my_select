@@ -1,13 +1,4 @@
-/*
-** error.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Dec 13 22:32:11 2015 Ronan Boiteau
-** Last update Sun Dec 13 22:34:13 2015 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "my.h"
 #include "my_select_ncurses.h"
 

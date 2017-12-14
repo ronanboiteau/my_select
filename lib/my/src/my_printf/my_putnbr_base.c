@@ -1,19 +1,10 @@
-/*
-** my_putnbr_base.c for my_putnbr_base in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Mon Oct 19 00:17:18 2015 Ronan Boiteau
-** Last update Tue Dec  1 03:04:36 2015 Ronan Boiteau
-*/
-
 #include "my.h"
+#include "printf_puts.h"
 
-unsigned int	my_putnbr_base_fd(int fd, unsigned int nbr, const char *base)
+t_uint		my_putnbr_base_fd(int fd, t_uint nbr, const char *base)
 {
-  unsigned int	base_int;
-  unsigned int	printed;
+  t_uint	base_int;
+  t_uint	printed;
 
   printed = 0;
   base_int = 0;
@@ -27,12 +18,10 @@ unsigned int	my_putnbr_base_fd(int fd, unsigned int nbr, const char *base)
   return (printed);
 }
 
-unsigned int	my_putnbr_base_ull(int fd,
-				   unsigned long long nbr,
-				   const char *base)
+t_uint		my_putnbr_base_ull(int fd, t_ull nbr, const char *base)
 {
-  unsigned int	base_int;
-  unsigned int	printed;
+  t_uint	base_int;
+  t_uint	printed;
 
   printed = 0;
   base_int = 0;

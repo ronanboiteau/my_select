@@ -1,25 +1,20 @@
-/*
-** my_str_isprintable.c for my_str_isprintable in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sun Oct 18 18:17:26 2015 Ronan Boiteau
-** Last update Sun Nov  8 02:09:59 2015 Ronan Boiteau
-*/
+#include <stdbool.h>
+#include <stdlib.h>
+#include "my.h"
 
-#include "my_macro.h"
-
-int		my_str_isprintable(char *str)
+int		my_str_isprintable(const char *str)
 {
-  unsigned int	idx;
+  t_uint	idx;
 
+  if (str == NULL)
+    return (false);
   idx = 0;
   while (str[idx] != '\0')
     {
-      if (!(str[idx] >= 32 && str[idx] <= 126))
-	return (FALSE);
+      if (!((str[idx] >= 32 && str[idx] <= 126) || str[idx] == '\0'
+	    || (str[idx] >= 7 && str[idx] <= 13)))
+	return (false);
       idx += 1;
     }
-  return (TRUE);
+  return (true);
 }

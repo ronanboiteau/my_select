@@ -1,13 +1,14 @@
 NAME	= my_select
 
 IDIR	= include/
+IDIR_MY	= lib/my/include/
 
 LIB	= libmy.a
 LNAME	= my
-LDIR	= lib/my
+LDIR	= lib/my/
 
 CC	= gcc
-CFLAGS	+= -I $(IDIR)
+CFLAGS	+= -I $(IDIR) -I $(IDIR_MY)
 CFLAGS	+= -Wall -Werror -Wextra -ansi
 
 SRCS_DIR	= src/
@@ -31,7 +32,7 @@ $(LIB):
 	make -C $(LDIR)
 
 $(NAME): $(OBJS)
-	$(CC) -o $(NAME) $(OBJS) -L lib -l $(LNAME) -lncurses
+	$(CC) -o $(NAME) $(OBJS) -L $(LDIR) -l $(LNAME) -lncurses
 
 clean:
 	$(RM) $(OBJS)

@@ -1,13 +1,5 @@
-/*
-** main.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Wed Dec  2 17:59:31 2015 Ronan Boiteau
-** Last update Fri Dec 11 04:10:30 2015 Ronan Boiteau
-*/
-
+#include <stdbool.h>
+#include <stdlib.h>
 #include "my.h"
 #include "my_macro.h"
 #include "my_select_ncurses.h"
@@ -18,20 +10,20 @@ static void		_print_selected(t_node *list_start, int first_pass)
   t_node		*tmp;
 
   tmp = list_start;
-  if (tmp->selected == TRUE)
+  if (tmp->selected == true)
     {
       my_printf("%s", tmp->str);
-      first_pass = FALSE;
+      first_pass = false;
     }
   tmp = tmp->next;
   while (tmp != list_start)
     {
-      if (tmp->selected == TRUE)
+      if (tmp->selected == true)
 	{
-	  if (first_pass == TRUE)
+	  if (first_pass == true)
 	    {
 	      my_printf("%s", tmp->str);
-	      first_pass = FALSE;
+	      first_pass = false;
 	    }
 	  else
 	    my_printf(" %s", tmp->str);
@@ -53,12 +45,12 @@ int			main(int argc, char **argv)
     my_exit(EXIT_FAILURE,"Out of memory! malloc() failed\n");
   list_start->str = argv[1];
   list_start->arg_rank = 1;
-  list_start->selected = FALSE;
+  list_start->selected = false;
   list_end = list_start;
   list_end->next = list_start;
   _init_list(list_start, argv);
   if ((list_start = _selection_window(list_start)) != NULL)
-    _print_selected(list_start, TRUE);
+    _print_selected(list_start, true);
   free(list_start);
   return (EXIT_SUCCESS);
 }

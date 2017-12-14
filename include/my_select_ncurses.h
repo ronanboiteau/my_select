@@ -1,13 +1,3 @@
-/*
-** my_select_ncurses.h for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Mon Dec  7 21:37:02 2015 Ronan Boiteau
-** Last update Sun Dec 13 22:33:08 2015 Ronan Boiteau
-*/
-
 #ifndef MY_SELECT_NCURSES_H_
 # define MY_SELECT_NCURSES_H_
 

@@ -1,13 +1,5 @@
-/*
-** actions.c for my_select in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Tue Dec  8 11:17:21 2015 Ronan Boiteau
-** Last update Sun Dec 13 20:51:54 2015 Ronan Boiteau
-*/
-
+#include <stdbool.h>
+#include <stdlib.h>
 #include "my.h"
 #include "my_macro.h"
 #include "list.h"
@@ -60,9 +52,9 @@ void		_reverse_selection(t_node *list_start, int current)
   tmp = list_start;
   while (tmp->arg_rank != current)
     tmp = tmp->next;
-  if (tmp->selected == TRUE)
-    tmp->selected = FALSE;
+  if (tmp->selected == true)
+    tmp->selected = false;
   else
-    tmp->selected = TRUE;
+    tmp->selected = true;
   return ;
 }

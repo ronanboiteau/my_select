@@ -1,20 +1,11 @@
-/*
-** find_flag.c for my_printf in /home/boitea_r
-** 
-** Made by Ronan Boiteau
-** Login   <boitea_r@epitech.net>
-** 
-** Started on  Sat Nov 14 09:13:48 2015 Ronan Boiteau
-** Last update Tue Dec  1 03:15:50 2015 Ronan Boiteau
-*/
-
+#include <stdlib.h>
 #include "my.h"
-#include "my_macro.h"
 #include "printf_flags.h"
+#include "printf_puts.h"
 
-static int		_find_extra_chars(t_string *str)
+static int	_find_extra_chars(t_cstring *str)
 {
-  char			extra_char;
+  char		extra_char;
 
   while (str->str[str->idx + 1] && !_char_isletter(str->str[str->idx + 1]))
     {
@@ -27,13 +18,13 @@ static int		_find_extra_chars(t_string *str)
   return (extra_char);
 }
 
-static unsigned int	_add_extra_spaces(t_string *str,
-					  char extra_char,
-					  int fd,
-					  va_list ap)
+static t_uint	_add_extra_spaces(t_cstring *str,
+				  char extra_char,
+				  int fd,
+				  va_list ap)
 {
-  va_list		ap_tmp;
-  unsigned int		printed;
+  va_list	ap_tmp;
+  t_uint	printed;
 
   printed = 0;
   *ap_tmp = *ap;
@@ -50,14 +41,14 @@ static unsigned int	_add_extra_spaces(t_string *str,
   return (printed);
 }
 
-const char		*_find_flag(t_string *str,
-				    unsigned int *printed,
-				    int fd,
-				    va_list ap)
+const char	*_find_flag(t_cstring *str,
+			    t_uint *printed,
+			    int fd,
+			    va_list ap)
 {
-  const char		*specifiers;
-  char			extra_char;
-  va_list		ap_tmp;
+  const char	*specifiers;
+  char		extra_char;
+  va_list	ap_tmp;
 
   *ap_tmp = *ap;
   specifiers = "%";
